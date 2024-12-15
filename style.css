@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #00796b;
+    color: #ffffff;
+}
+
+.scrolled {
+    background-color: #004d40;
+}
+
+#content {
+    padding-top: 60px; /* To avoid content hidden behind the fixed navbar */
+}
+
+section {
+    padding: 50px;
+    height: 100vh;
+}
+
+h2 {
+    color: #333;
+}
+
+.stopwatch {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#startStopBtn {
+    background-color: #009688;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
